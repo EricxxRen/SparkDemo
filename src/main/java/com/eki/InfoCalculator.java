@@ -18,6 +18,7 @@ public class InfoCalculator {
         JavaSparkContext sc = new JavaSparkContext(sparkConf);
 
         //读取文件
+        //D:\gitRepo\SparkDemo\info.csv
         JavaRDD<String> datafile = sc.textFile("/home/xiaoxing/IdeaProjects/HightStat/info.csv");
 
         //过滤得到性别为M的条目
